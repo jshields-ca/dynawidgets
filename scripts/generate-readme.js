@@ -27,7 +27,8 @@ function generateReadmeSection() {
     groups[letter].push({
       title: meta.title,
       description: meta.description,
-      author: meta.author
+      author: meta.author,
+      docsPath: `widgets/${entry.name}/widget.md`
     });
   }
 
@@ -48,7 +49,7 @@ function generateReadmeSection() {
   for (const letter of sortedLetters) {
     lines.push(`## ${letter}`);
     for (const widget of groups[letter]) {
-      lines.push(`- **${widget.title}** — ${widget.description}`);
+      lines.push(`- [**${widget.title}**](${widget.docsPath}) — ${widget.description}`);
       lines.push(`  - Author: ${widget.author}`);
     }
     lines.push('');
