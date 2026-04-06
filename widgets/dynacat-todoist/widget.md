@@ -205,7 +205,6 @@ Paste the contents of `widgets/todoist-dashboard.yml` into a column's `widgets:`
     </div>
 ```
 
-The full widget file is also available at [`widgets/todoist-dashboard.yml`](widgets/todoist-dashboard.yml).
 
 ---
 
