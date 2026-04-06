@@ -12,6 +12,8 @@ A single consolidated `custom-api` widget for [Dynacat](https://github.com/Panon
 
 No extra server required — Dynacat fetches the Todoist API directly at render time.
 
+> Please note that Claude AI was utilized to assist in development and testing.
+
 ---
 
 ## Requirements
