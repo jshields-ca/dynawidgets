@@ -149,3 +149,19 @@ required:
   url: https://api.todoist.com/api/v1/user
   url: https://api.todoist.com/api/v1/tasks
   url: https://api.todoist.com/api/v1/projects
+
+- type: custom-api
+  widget: dynacat-todoist
+  cache: 15m
+  url: https://api.todoist.com/api/v1/user
+  headers:
+    Authorization: Bearer ${TODOIST_API_TOKEN}
+  subrequests:
+    tasks:
+      url: https://api.todoist.com/api/v1/tasks
+      headers:
+        Authorization: Bearer ${TODOIST_API_TOKEN}
+    projects:
+      url: https://api.todoist.com/api/v1/projects
+      headers:
+        Authorization: Bearer ${TODOIST_API_TOKEN}
